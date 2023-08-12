@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  .product-list-item .product-details .product-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .paper {
+    height: 350px;
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-block {
+    display: flex;
+    flex-direction: column;
+  }
+}

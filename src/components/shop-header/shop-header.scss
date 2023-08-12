@@ -1,0 +1,38 @@
+.shop-header {
+  position: relative;
+  height: 75px;
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding: 0 10px;
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .shop-header-navigation {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    .header-links {
+      display: flex;
+      .shop-header-link {
+        text-decoration: none;
+        align-self: center;
+        padding-left: 5px;
+        color: #FFFFFF;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .shop-header {
+    display: none;
+  }
+}
