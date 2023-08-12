@@ -3,7 +3,14 @@
   justify-content: center;
 }
 
-.pagination-container {
+.pagination-container, .price-range-slider {
   display: flex;
   justify-content: center;
+}
+.pagination-container {
+  margin: 30px 0;
+}
+
+.price-range-slider {
+  margin-bottom: 30px;
 }

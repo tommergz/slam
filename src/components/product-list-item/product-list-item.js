@@ -63,6 +63,7 @@ const ProductListItem = ({ product }) => {
                 {title}
               </Typography>
               <Typography 
+                className='product-description'
                 sx={{
                   height: 100,
                   overflow: 'auto'

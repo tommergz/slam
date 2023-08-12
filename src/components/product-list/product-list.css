@@ -7,11 +7,19 @@
           justify-content: center;
 }
 
-.pagination-container {
+.pagination-container, .price-range-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.pagination-container {
+  margin: 30px 0;
+}
+
+.price-range-slider {
+  margin-bottom: 30px;
 }
