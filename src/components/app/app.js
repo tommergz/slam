@@ -8,7 +8,7 @@ import LoginPage from '../pages/login-page';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(
-    () => !localStorage.getItem('logged_user')
+    () => localStorage.getItem('logged_user') !== null && localStorage.getItem('logged_user') !== 'false'
   );
 
   useEffect(() => {
