@@ -1,14 +1,14 @@
-import axios from "axios";
-import { API_URL } from "../constants/constants";
+import $api from "../http";
 
 
 export const logIn = async (email, password, setIsLoggedIn) => {
   try {
-    const response = await axios.post(`${API_URL}/auth/login`, {
+    const response = await $api.post(`/auth/login`, {
       email,
       password
     })
     localStorage.setItem('token', response.data.access_token)
+    localStorage.setItem('refresh_token', response.data.refresh_token)
     setIsLoggedIn(true);
   } catch (e) {
     alert(e.response.data.message)
@@ -17,5 +17,6 @@ export const logIn = async (email, password, setIsLoggedIn) => {
 
 export const logOut = async (setIsLoggedIn) => {
   localStorage.removeItem('token')
+  localStorage.removeItem('refresh_token')
   setIsLoggedIn(false);
 }
